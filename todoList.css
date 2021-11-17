@@ -1,0 +1,19 @@
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.mainContainer{
+    width: 30%;
+    height:500px;
+    margin: 80px 33vw ;
+    /*background-color: red;*/
+}
+.mainContainer_title{
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: bold;
+}
+
