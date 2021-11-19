@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link href="todoList.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;700&display=swap" rel="stylesheet">
     <title>Title</title>
 </head>
 <body style="background-image: url('background.jpg')">
@@ -10,26 +14,31 @@
 <div class="mainContainer">
     <div class="mainContainer_title">TODO</div>
 
-    <div class="add-item">
-        <i class="fa fa-plus-circle"></i>
-        <input type="text" id="input" placeholder="Add a to-do">
+    <div class="input_wrapper">
+        <button type="submit" class="input-check"></button>
+        <input type="text" id="input" placeholder="Create a new todo..." value="">
     </div>
 
-    <div class="content">
-        <ul id="list">
-            <li class="item">
-                <i class="fa fa-circle-thin complete"></i>
-                <p class="text">drink coffee</p>
-                <i class="fa fa-trash-o delete"></i>
-            </li>
+    <div class="todo-list-wrapper">
+        <ul class="list"></ul>
+        <div class="todo-list-footer">
+            <span class="items-left">0 items left</span>
+            <div class="filter-wrapper">
+                <button aria-label="All" value="all" class="filter-option selected">All</button>
+                <button aria-label="Active" value="active" class="filter-option ">Active</button>
+                <button aria-label="Completed" value="completed" class="filter-option ">Completed</button>
+            </div>
+            <button aria-label="Clear Completed" class="btn-clear">Clear Completed</button>
+        </div>
 
-
-        </ul>
     </div>
+
 
 </div>
 
 
-<script src="todoList.js"></script>
+
+
+<!--<script src="todoList.js"></script>-->
 </body>
 </html>
