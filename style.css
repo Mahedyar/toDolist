@@ -1,0 +1,85 @@
+body {
+    padding: 50px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 0.8) 0%, rgba(155, 77, 202, 0.8) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    margin: auto !important;
+}
+
+input {
+    width: 350px !important;
+    margin-right: 10px !important;
+}
+
+.todo-container {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8e7;
+    width: 450px;
+    list-style: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 15px;
+    min-height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+li {
+    margin: 0 !important;
+    padding: 10px;
+    list-style: none;
+    width: 95%;
+}
+
+.material-icons {
+    margin-right: 5px !important;
+    cursor: pointer;
+}
+
+.complete-todo {
+    background-color: rgba(248, 248, 231, 0.5);
+}
+
+.filters {
+    color: white;
+    width: 25%;
+    margin: 30px auto;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+
+.filter {
+    cursor: pointer;
+}
+
+.filter-active {
+    color: rgba(155, 77, 202, 1);
+    font-weight: bold;
+}
+
+.clear-completed:hover{
+    color: rgba(155, 77, 202, 1);
+}
